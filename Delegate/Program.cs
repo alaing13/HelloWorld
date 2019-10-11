@@ -8,13 +8,13 @@ namespace Delegate
     {
         public static void DelegateMethod1(string message)
         {
-            System.Console.WriteLine(message + "1");
+            System.Console.WriteLine(message + " 1");
         }
         public static void DelegateMethod2(string message)
         {
-            System.Console.WriteLine(message + "2");
+            System.Console.WriteLine(message + " 2");
         }
-        static void Main(string[] args)
+        static void Main()
         {
             Del handler = DelegateMethod1;
             handler += DelegateMethod2;
