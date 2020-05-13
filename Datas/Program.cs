@@ -9,8 +9,7 @@ namespace Datas
         static void Main()
         {
 
-            
-            string CONSTR = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="+Path.GetFullPath(@".\Database.mdf")+";Integrated Security=True";
+            string CONSTR = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + Path.GetFullPath(@".\Database.mdf") + ";Integrated Security=True";
             string SQL = "select * from Dbo.Person";
 
             /// Sans IDispose
@@ -27,7 +26,6 @@ namespace Datas
                 );
             }
             SDR1.Close();
-            SCom1.Dispose();
             SCon1.Close();
 
             Console.WriteLine();
@@ -53,6 +51,7 @@ namespace Datas
             }
 
             Console.ReadLine();
+
         }
     }
 }

@@ -20,7 +20,7 @@ namespace Delegate
             handler += DelegateMethod2;
             handler("Hello World");
             handler -= DelegateMethod1;
-            handler("Hello World"); 
+            handler("Hello World");
             Console.ReadLine();
         }
     }
